@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora - Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background: #111;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+      width: 380px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .signup-box img {
+      width: 120px;
+      margin-bottom: 15px;
+      animation: logoBounce 1.2s ease forwards;
+    }
+
+    @keyframes logoBounce {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .signup-box h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #a855f7, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .signup-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .signup-box input:focus {
+      outline: none;
+      border: 2px solid #a855f7;
+      box-shadow: 0 0 8px #a855f7;
+    }
+
+    .signup-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background: linear-gradient(90deg, #a855f7, #3b82f6);
+      color: #fff;
+      transition: 0.3s;
+      box-shadow: 0 0 0px rgba(168, 85, 247, 0.6);
+    }
+
+    .signup-box button:hover {
+      opacity: 0.9;
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.8), 0 0 25px rgba(59, 130, 246, 0.8);
+    }
+
+    .signup-box p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .signup-box p a {
+      color: #a855f7;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .signup-box p a:hover {
+      text-decoration: underline;
+      color: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <!-- Nexora Logo -->
+    <img src="logo2.jpg" alt="Nexora Logo">
+    <h1>Create Account</h1>
+
+    <!-- Signup Form -->
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="index.htm">Login</a></p>
+
+  </div>
+</body>
+</html>
